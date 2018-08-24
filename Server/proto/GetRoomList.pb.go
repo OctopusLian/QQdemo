@@ -60,7 +60,7 @@ type GetRoomList_ToC struct {
 func (m *GetRoomList_ToC) Reset()                    { *m = GetRoomList_ToC{} }
 func (m *GetRoomList_ToC) String() string            { return proto1.CompactTextString(m) }
 func (*GetRoomList_ToC) ProtoMessage()               {}
-func (*GetRoomList_ToC) Descriptor() ([]byte, []int) { return fileDescriptor0, []int{1} }
+func (*GetRoomList_ToC) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{1} }
 
 func (m *GetRoomList_ToC) GetRoomid() string {
 	if m != nil && m.Roomid != nil {
@@ -88,9 +88,9 @@ func init() {
 	proto1.RegisterType((*GetRoomList_ToC)(nil), "proto.GetRoomList_ToC")
 }
 
-func init() { proto1.RegisterFile("GetRoomList.proto", fileDescriptor0) }
+func init() { proto1.RegisterFile("GetRoomList.proto", fileDescriptor3) }
 
-var fileDescriptor0 = []byte{  //改正
+var fileDescriptor3 = []byte{  //改正
 	// 125 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x12, 0x74, 0x4f, 0x2d, 0x09,
 	0xca, 0xcf, 0xcf, 0xf5, 0xc9, 0x2c, 0x2e, 0xd1, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x62, 0x05,
