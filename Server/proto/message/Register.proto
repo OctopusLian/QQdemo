@@ -1,0 +1,14 @@
+syntax = "proto2";
+package proto;
+
+message Register_ToS{
+    required string uid = 1;
+    required string username = 2;
+    required string password = 3;
+}
+
+message Register_ToC{
+    required string uid = 1;
+    required string username = 2;
+    required string password = 3;
+}

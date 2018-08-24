@@ -1,0 +1,6 @@
+syntax = "proto2";
+package proto;
+
+message HeartBeat_ToS{
+    required int64 Timestamp = 1;
+}

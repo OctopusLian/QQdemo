@@ -1,0 +1,12 @@
+syntax = "proto2";
+package proto;
+
+message GetRoomList_ToS{
+    required string uid = 1;
+}
+
+message GetRoomList_ToC{
+    required string roomid = 1;
+    required string roomname = 2;
+    required int32 roompeople = 3;
+}
