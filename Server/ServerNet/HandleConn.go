@@ -17,5 +17,7 @@ func OnLogin(){
 	var user_id string = LoginProto.GetUid()
 	fmt.Println("OnLogin :",user_id)
 
-
 }
+
+//更新
+
