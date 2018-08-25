@@ -2,7 +2,7 @@ package ServerNet
 
 import (
 	"net"
-
+	"QQdemo/Server/helper"
 	"fmt"
 )
 
@@ -34,6 +34,14 @@ func ServerStart(addr_port string){
 //关闭服务
 func ServerClose(){
 	listen_socket.Close()
+}
+
+//发送消息 加上包长
+func Send(conn net.Conn, msg []byte) {
+	lenBytes := helper.NumToByte(int32(len(msg)))
+	sendBuff := helper.ConcatByte(lenBytes, msg)
+	fmt.Println("Send:", sendBuff)
+	conn.Write(sendBuff)
 }
 
 

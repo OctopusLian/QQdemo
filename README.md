@@ -6,9 +6,13 @@ Server\DBServ\InsertDB.go:6:12: undefined: db
 Server\DBServ\InsertDB.go:10:3: undefined: checkErr  
 明天继续coding。  
 - 2018.8.25下午：完成了使用Go语言操作MySQL数据库的删除数据和更新的数据的逻辑，在编码过程中感到技术知识的不足，先列举如下  
-1，函数定义、调用和传参；
-2，数据库：SQL语句上的条件约束和联合查询；
-3，Protobuf协议的运用；
-4，对指针的深入理解；
-5，计算机网络：Socket编程，TCP机制，分包粘包；
-6，操作系统：加锁的概念，为什么多线程会不安全；
+1，函数定义、调用和传参；  
+2，数据库：SQL语句上的条件约束和联合查询；  
+3，Protobuf协议的运用；  
+4，对指针的深入理解；  
+5，计算机网络：Socket编程，TCP机制，分包粘包；  
+6，操作系统：加锁的概念，为什么多线程会不安全；  
+- 2018.8.25晚：添加了定义协议号的Server/userproto/userhandle.go文件；写了使用protobuf完成用户登录的逻辑；接下来应完成  
+1，在Server/proto/message/Login.proto中的Login_ToC添加msg字段，并运用到登录逻辑中去，并加锁；   
+2，定义存储客户端连接服务端用的哈希表；  
+3，写好协议收发的逻辑；  
