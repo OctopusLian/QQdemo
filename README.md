@@ -16,3 +16,4 @@ Server\DBServ\InsertDB.go:10:3: undefined: checkErr
 1，在Server/proto/message/Login.proto中的Login_ToC添加msg字段，并运用到登录逻辑中去，并加锁；   
 2，定义存储客户端连接服务端用的哈希表；  
 3，写好协议收发的逻辑；  
+- 2018.8.28中午：添加了Go语言操作数据库的增删改查逻辑，但细节仍需改进；
